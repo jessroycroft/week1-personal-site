@@ -1,0 +1,41 @@
+
+input, textarea {
+	border: 1px solid darken($offwhite, 10%);
+	background-color: lighten($offwhite, 1%);
+	font-size: 16px;
+	padding: 15px;
+	width: 400px;
+	margin: 10px;
+}
+
+.text, .email, .message {
+	color: $body-color;
+	font-family: $body-font;
+	&:focus {
+		outline: 3px solid $contessa;
+	}
+}
+
+.message {
+	height: 150px;
+}
+
+.submitButton {
+	width: 100px;
+	color: $bluesmoke;
+	font-weight: bold;
+	background-color: $salomie;
+	border: 3px solid $section-color-odd;
+	padding: 7px 4px;
+	text-transform: uppercase;
+	font-family: $section-header-font;
+	transition: all 0.6s ease;
+	&:hover {
+		background-color: $salomie;
+		color: $contessa;
+		border: 3px solid $contessa;
+	}
+	&:focus {
+		outline: 3px solid $contessa;
+	}
+}

@@ -1,0 +1,137 @@
+
+// Page header
+
+.page-header {
+	width: 100%;
+	min-height: 100vh; //Sets height to 100% of the viewport
+	background-color: $splash-header-color;
+	color: $splash-text-color;
+	position: relative;
+	transition: background-color 0.7s ease-in;
+	pointer-events: none; // Disables hover trigger
+	h1 {
+		color: $splash-text-color;
+		transition: color 0.7s ease;
+	}
+	span {
+		color: $splash-text-color;
+		transition: all 0.9s ease-in;
+	}
+}
+
+.page-header h1, h3 {
+	text-transform: lowercase;
+	text-align: center;
+	margin: 0;
+}
+
+.page-header h1 {
+	font-family: $splash-font;
+	letter-spacing: -1px;
+	font-size: 120px;
+	span {
+		font-family: $splash-span;
+	}
+}
+
+a.hover-effect {
+	pointer-events: auto;
+} //Sets trigger for .page-header hover
+
+
+.page-header:hover {
+	background-color: $salomie;
+	span {
+		color: $contessa;
+	}
+}
+
+.page-header a i {
+	color: $splash-text-color;
+	font-size: 90px;
+	margin-top: 30px;
+	transition: all 0.7s ease-in;
+}
+
+.sub-wrapper {
+	width: 32%;
+	margin: 0 auto;
+	margin-top: 40px;
+	padding: 10px;
+	border: 2px solid $splash-text-color;
+}
+
+.page-header h3 {
+	font-family: $h3-font;
+	font-size: 35px;
+
+}
+
+.title-wrapper {
+	padding-top: 40vh; 
+}
+
+.fixed-text-wrapper h3 {
+	color: $splash-text-color;
+}
+
+	// Page header media queries
+
+	@media only screen and (max-width: 767px) {
+		.page-header .title-wrapper h1 {
+			font-size: 100px;
+		}
+
+		.page-header h3 {
+			font-size: 25px;
+		}
+	}
+	@media only screen and (max-width: 600px) {
+		.sub-wrapper {
+			width: 200px;
+		}
+
+		.page-header {
+			background-color: $salomie;
+			span {
+				color: $contessa;
+			}
+		}
+
+		.title-wrapper {
+			padding-top: 20vh;
+		}
+
+		.page-header .title-wrapper h1 {
+			font-size: 80px;
+			padding-bottom: 20px;
+		}
+		.sub-wrapper {
+			margin-top: 0;
+		}
+	}
+	
+
+
+// Section Subheaders
+
+.subheader h2 {
+	text-transform: lowercase;
+	font-size: 25px;
+	font-family: $section-header-font;
+	color: $subheader-color;
+	position: relative;
+	top: 20px;
+}
+
+.work .subheader h2 {
+	top: 50px;
+}
+
+
+.work h4 {
+	color: $subheader-color;
+	font-family: $section-header-font;
+	font-size: 20px;
+	text-transform: lowercase;
+}

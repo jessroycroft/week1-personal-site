@@ -1,0 +1,38 @@
+
+// Set colors
+
+$salomie: #fce18e;
+$contessa: #c77869;
+$lightslate: #758a95;
+$bluesmoke: #6f8d82;
+$offwhite: #fcfcfc;
+
+
+
+
+
+// Functional colors
+$background-color: white;
+$section-color-odd: darken($offwhite, 1%);
+$section-color-even: $offwhite;
+$splash-header-color: $section-color-odd;
+$splash-text-color: $bluesmoke;
+$icon-color: darken($offwhite, 25%);
+$subheader-color: $bluesmoke;
+$nav-color: $bluesmoke;
+$link-hover: $contessa;
+$body-color: darken($offwhite, 50%);
+$border-color: $salomie;
+
+// Set fonts
+
+
+// Font variables
+
+$splash-font: 'Questrial', sans-serif;
+$splash-span: 'Questrial', sans-serif;
+$h3-font: 'Old Standard TT', serif;
+$section-header-font: 'Questrial', sans-serif;
+$body-font: 'Old Standard TT', serif;
+$nav-font: 'Questrial', sans-serif;
+
